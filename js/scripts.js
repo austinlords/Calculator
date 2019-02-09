@@ -29,13 +29,13 @@ $(function() {
     operation = $("input[type=radio]:checked").val();
 
     if (operation === "add") {
-      var result = number1 + number2;
+      var result = add(number1, number2);
     } if (operation === "subtract") {
-      var result = number1 - number2;
+      var result = subtract(number1, number2);
     } if (operation === "multiply") {
-      var result = number1 * number2
+      var result = multiply(number1,number2);
     } if (operation === "divide") {
-      var result = number1 / number2
+      var result = divide(number1, number2);
     }
 
     $("div#result").text("Result: " + result);
